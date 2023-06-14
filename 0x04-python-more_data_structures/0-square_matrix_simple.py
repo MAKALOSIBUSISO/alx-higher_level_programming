@@ -1,6 +1,15 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    squared = []
-    for line in matrix:
-        squared.append([c**2 for in line])
-        return squared
+
+def uniq_add(my_list=[]):
+
+    uniq_list = set(my_list)
+
+    num = 0
+
+
+    for i in uniq_list:
+
+        num += i
+
+
+    return (num)
