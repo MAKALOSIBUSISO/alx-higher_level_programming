@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-def uniq_add(my_list=[]):
+def square_matrix_simple(matrix=[]):
 
-    uniq_list = set(my_list)
-    num = 0
+    new_matrix = matrix.copy()
 
-    for i in uniq_list:
-        num += i
+    for i in range(len(matrix)):
+        new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
 
-    return (num)
+
+    return (new_matrix)
